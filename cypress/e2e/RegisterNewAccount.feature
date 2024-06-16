@@ -1,4 +1,4 @@
-@register
+@registerAccount
 Feature: User registers a new account in bank
 
     Scenario Outline: User registers a new account in bank
