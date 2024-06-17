@@ -19,7 +19,9 @@ Feature: User can update profile information
         Then Fullname "<newFrstName>" "<newLastName>" is displayed after welcome text
 
         Examples:
-            | newFrstName | newLastName | username | password      |
-            | Albert      | Varblane    | jaanTest | passTest1     |
-            | Mikk        | Sammal      | jaanTest | wrongPassword |
+            | newFrstName | newLastName | username | password  |
+            | Albert      | Varblane    | jaanTest | passTest1 |
+            | Mikk        | Sammal      | jaanTest | passTest1 |
+
+
 

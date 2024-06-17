@@ -1,8 +1,9 @@
 @registerAccount
 Feature: User registers a new account in bank
+    Background: Clean database
+        When Clean database
 
     Scenario Outline: User registers a new account in bank
-        When Clean database
         Given User is on ParaBank web page registration screen
         When User creates new account with personal information "<firstName>" and "<lastName>"
         And  User inserts new account contacts "<address>", "<city>", "<state>", "<zipCode>", "<phone>" and "<ssn>"

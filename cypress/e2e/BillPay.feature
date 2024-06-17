@@ -10,7 +10,7 @@ Feature: User can pay bill
         And User inserts new account credentials "jaanTest" and "passTest1"
         Then User "jaanTest" is logged in with new account
 
-    Scenario Outline: User applies for a loan in bank
+    Scenario Outline: User can pay bill in the bank
         Given User in on bill payment page
         When User inserts payee contact information "<payeeName>", "<address>", "<city>", "<state>", "<zipCode>" and "<phone>"
         When User inserts account number "<accountId>" and amount "<amount>"

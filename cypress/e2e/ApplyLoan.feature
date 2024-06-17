@@ -1,4 +1,4 @@
-@appluLoan
+@applyLoan
 Feature: User can apply a loan
 
     Background: User registers a new account in bank

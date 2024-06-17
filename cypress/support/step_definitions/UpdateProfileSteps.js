@@ -6,13 +6,14 @@ Given("User is on update contact info page", async () => {
 });
 
 When("User updates {string} and {string}", async (firstName, lastName) => {
-  cy.get(selectors.firstName).should("be.visible");
+  cy.get(selectors.firstName).should("be.visible").clear();
+  cy.get(selectors.firstName).type(firstName);
+  cy.get(selectors.lastName).clear();
+  cy.get(selectors.lastName).should("be.visible").type(lastName);
   cy.get(selectors.firstName).clear();
   cy.get(selectors.firstName).type(firstName);
   cy.get(selectors.lastName).clear();
   cy.get(selectors.lastName).type(lastName);
-  cy.get(selectors.firstName).clear();
-  cy.get(selectors.firstName).type(firstName);
   cy.get(selectors.updateButton).click();
 });
 
